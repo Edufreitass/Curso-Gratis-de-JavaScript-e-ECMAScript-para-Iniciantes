@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IDADE</title>
+</head>
+<body>
+    <h1>Você é de MAIOR ou de MENOR?</h1>
+    Digite aqui a sua idade: <input type="number" name="idade" id="idade">
+    <input type="button" value="Confima" onclick="dados()">
+    <div id="res"></div>
+
+    <script>
+        function dados() {
+            var idade = window.document.getElementById('idade');
+            var res = window.document.getElementById('res');
+            var idd = Number(idade.value);
+            if (idd >= 18) {
+                res.innerHTML +='Você é de maior!'
+            }else{
+                res.innerHTML +='Você é de menor!'
+            }
+        }
+    </script>
+</body>
+</html>

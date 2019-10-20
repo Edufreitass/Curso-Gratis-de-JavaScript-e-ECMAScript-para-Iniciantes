@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PAÍS</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Digite o país que você mora: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Confirmar" onclick="nacionalidade()">
+    <div id="resultado"></div>
+
+    <script>
+        function nacionalidade() {
+            var getpais = window.document.getElementById('txtp'); //pega o elemento do ID que será inserido na caixa de texto
+            var res = window.document.getElementById('resultado'); //exibe o resultado abaixo da caixa de texto
+            var nac = (txtp.value); //variavel que vai identificar o que foi digitado na CT 
+            if (nac == 'Brasil') {
+                res.innerHTML += 'Você é Brasileiro'
+            }else{
+                res.innerHTML += 'Você é Estrangeiro'
+            }
+        }
+    </script>
+
+</body>
+</html>
